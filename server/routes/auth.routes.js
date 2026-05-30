@@ -5,7 +5,11 @@ import multer from "multer";
 import path from "path";
 
 const storage = multer.diskStorage({
+<<<<<<< HEAD
   destination: (req, file, cb) => cb(null, "uploads/"),
+=======
+  destination: (req, file, cb) => cb(null, "/tmp"),
+>>>>>>> a0774128efee1cf4deafdd131202796e18da0b0f
   filename: (req, file, cb) => cb(null, Date.now() + path.extname(file.originalname)),
 });
 const upload = multer({ storage });
