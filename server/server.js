@@ -7,13 +7,12 @@ import connectDB from "./config/db.js";
 
 connectDB();
 
-const PORT =
-  process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+if (process.env.NODE_ENV !== 'production' && process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
-  console.log(
-    `Server running on port ${PORT}`
-  );
-
-});
+export default app;
