@@ -4,12 +4,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "nodemon server.js"
-=======
     "dev": "nodemon server.js",
     "start": "node server.js"
->>>>>>> a0774128efee1cf4deafdd131202796e18da0b0f
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,11 +17,8 @@
     "mongoose": "^8.24.0",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.8"
-<<<<<<< HEAD
-=======
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
->>>>>>> a0774128efee1cf4deafdd131202796e18da0b0f
   }
 }
